@@ -24,10 +24,10 @@ export default {
 .container {
   // border: 1px solid red;
   height: 12vh;
-  width: 20%;
+  width: 300px;
   position: absolute;
   top: 60%;
-  left: 40%;
+  left: calc(50% - 150px);
   background-color: rgba(201, 201, 184, 0.9);
   transform: translateY(30px);
   opacity: 0;
@@ -36,20 +36,20 @@ export default {
 }
 
 .text {
-  font-size: 16px;
-  letter-spacing: 5px;
+  font-size: 14px;
+  letter-spacing: 3px;
   color: transparent;
-  font-weight: 300;
+  font-weight: 400;
   transition: 1s;
   transition-delay: 1.25s;
 }
 ::after {
   content: "";
   position: absolute;
-  height: 91%;
+  height: 94%;
   width: 98%;
   border: 1px solid rgb(10, 63, 81);
-  top: 5%;
+  top: 3%;
   left: 1%;
 }
 
