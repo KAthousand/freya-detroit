@@ -36,7 +36,6 @@
             gradient="to top right, rgba(10,63,81,.3), rgba(10,63,81,.5)"
             class="image"
             height="100%"
-            style="width: 50%;border: 20px solid rgba(177, 177, 161, .25);"
           ></v-img>
         </div>
         <div class="photo-content right">
@@ -47,7 +46,6 @@
             gradient="to top right, rgba(10,63,81,.4), rgba(10,63,81,.7)"
             class="image"
             height="100%"
-            style="width: 50%;border: 20px solid rgba(177, 177, 161, .25);"
           ></v-img>
         </div>
       </div>
@@ -109,6 +107,7 @@ export default {
 .photo-content {
   // border: 1px solid blue;
   width: 50%;
+  border: 20px solid rgba(177, 177, 161, 0.25);
   display: flex;
   background: linear-gradient(
       to top,
@@ -127,5 +126,18 @@ export default {
 
 .carousel {
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .right {
+    display: none;
+  }
+  .left {
+    width: 100%;
+    padding: 0;
+  }
+  .photo-content {
+    border: none;
+  }
 }
 </style>
