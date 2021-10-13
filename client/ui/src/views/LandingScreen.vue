@@ -89,7 +89,7 @@ export default {
     cycleStart: false,
   }),
   created() {
-    setTimeout(() => (this.cycleStart = true), 5000)
+    setTimeout(() => (this.cycleStart = true), 2500)
   },
 }
 </script>
