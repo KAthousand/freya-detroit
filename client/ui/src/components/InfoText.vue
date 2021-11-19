@@ -3,9 +3,19 @@
     class="container d-flex justify-center align-center"
     :class="{ newPos: this.switch === true }"
   >
-    <h5 class="text" :style="this.switch ? 'color: rgb(10, 63, 81)' : ''">
+    <!-- <h5 class="text" :style="this.switch ? 'color: rgb(10, 63, 81)' : ''">
       COMING NOVEMBER 2021
-    </h5>
+    </h5> -->
+
+    <div class="link">
+      <v-btn
+        class="btn"
+        :style="this.switch ? 'color: rgb(10, 63, 81)' : ''"
+        href="https://www.exploretock.com/freya"
+        target="_blank"
+        >MAKE A RESERVATION
+      </v-btn>
+    </div>
   </div>
 </template>
 
@@ -33,6 +43,20 @@ export default {
   opacity: 0;
   transition: 1s;
   transition-delay: 0.5s;
+  z-index: 9999 !important;
+}
+
+.btn {
+  background-color: rgb(10, 63, 81) !important;
+  color: rgba(201, 201, 184, 0.9) !important;
+  width: 100%;
+  z-index: 9999 !important;
+}
+.link {
+  text-decoration: none;
+  width: 70%;
+  z-index: 9999 !important;
+  // color: ;
 }
 
 .text {
