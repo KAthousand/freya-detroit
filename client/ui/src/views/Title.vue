@@ -100,7 +100,7 @@ export default {
           transparent 100%
         ),
         linear-gradient(to bottom right, rgba(0, 11, 17, 0.8), transparent 100%),
-        url("../assets/photos/10-2021 Squash Tart.jpg") no-repeat, center;
+        url("../assets/photos/10-2021-Squash-Tart.jpg") no-repeat, center;
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -123,6 +123,7 @@ export default {
       bottom: 15rem;
       transition: 1s;
       transition-delay: 0.25s;
+      z-index: 99999;
 
       &::before {
         content: "";

@@ -89,7 +89,6 @@ export default {
 
 <style lang="scss" scoped>
 .about-container {
-  // border: 1px solid red;
   height: 100%;
   width: 100%;
   background-color: var(--primary-dark);
@@ -114,10 +113,7 @@ export default {
     z-index: 3;
   }
 
-  // border: 1px solid blue;
-
   .content-container {
-    // border: 1px solid red;
     height: 100%;
     width: 100%;
     max-width: 1400px;
@@ -154,12 +150,10 @@ export default {
       }
     }
     .menu-description {
-      // border: 1px solid blue;
       margin-top: 7rem;
       height: 100%;
       width: 100%;
       padding: 1rem;
-
       z-index: 3;
       display: flex;
       justify-content: space-between;
@@ -167,7 +161,6 @@ export default {
       align-items: center;
 
       h5 {
-        // border: 2px solid var(--darker);
         width: 30%;
         padding: 1rem;
         color: var(--light);
@@ -185,7 +178,6 @@ export default {
         height: 100%;
         width: 100%;
         padding: 0;
-        // border: 1px solid red;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
@@ -210,7 +202,7 @@ export default {
           content: "";
           position: absolute;
           height: 75%;
-          width: 100%;
+          width: 99%;
           right: 1rem;
           border: 2px solid var(--light);
         }
@@ -300,18 +292,6 @@ export default {
     }
   }
 
-  .background-photo {
-    height: 100%;
-    width: 0%;
-    transform: scale(1.5);
-    background: url("../assets/photos/10-2021 Tuna.jpg") no-repeat;
-    // background: url("../assets/photos/10-2021 Tuna.jpg");
-    background-size: cover;
-    background-position: 0px 0px;
-    background-attachment: fixed;
-    // opacity: 0.9;
-  }
-
   .one {
     bottom: 2%;
     right: 2%;
@@ -321,10 +301,8 @@ export default {
         transparent 100%
       ),
       linear-gradient(to top left, rgba(0, 25, 40, 0.3), transparent 100%),
-      url("../assets/photos/10-2021 Blackberry Cavatelli.jpg") no-repeat center;
-    // background: url("../assets/photos/10-2021 Borscht.jpg") no-repeat center;
+      url("../assets/photos/10-2021-Blackberry-Cavatelli.jpg") no-repeat center;
     background-size: cover;
-    // box-shadow: 0px 20px 38px -21px rgba(0, 0, 0, 0.9);
   }
 
   .two {
@@ -337,10 +315,8 @@ export default {
         transparent 100%
       ),
       linear-gradient(to top left, rgba(0, 25, 40, 0.3), transparent 100%),
-      url("../assets/photos/10-2021 Tuna.jpg") no-repeat center;
+      url("../assets/photos/10-2021-Tuna.jpg") no-repeat center;
     background-size: cover;
-    // background-position: -75px;
-    // box-shadow: 0px 20px 38px -21px rgba(0, 0, 0, 0.9);
   }
 
   .photo-three {
@@ -356,11 +332,9 @@ export default {
         transparent 100%
       ),
       linear-gradient(to top left, rgba(0, 25, 40, 0.7), transparent 100%),
-      url("../assets/photos/10-2021 Panzanella.jpg") no-repeat center;
+      url("../assets/photos/10-2021-Panzanella.jpg") no-repeat center;
     background-size: cover;
     background-position: center;
-
-    // box-shadow: 0px 20px 38px -21px rgba(0, 0, 0, 0.9);
   }
 }
 </style>

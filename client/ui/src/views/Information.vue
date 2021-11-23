@@ -106,7 +106,12 @@ export default {
 .information-container {
   height: 100%;
   width: 100%;
-  background: url("../assets/information-background.gif") no-repeat center;
+  background: linear-gradient(
+      to top left,
+      rgba(70, 97, 114, 0.4),
+      transparent 80%
+    ),
+    url("../assets/information-background.gif") no-repeat center;
   background-size: cover;
   padding: 8vh 2vh 2vh 2vh;
   display: flex;
@@ -265,7 +270,7 @@ export default {
         width: 50rem;
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
-        background: url("../assets/photos/diningRoom.png") no-repeat center;
+        background: url("../assets/photos/diningRoom.jpg") no-repeat center;
         background-size: cover;
         transition: 1s;
         transition-delay: 0.75s;
@@ -289,7 +294,7 @@ export default {
         right: 70%;
         height: 40rem;
         width: 33rem;
-        background: url("../assets/photos/10-2021 Chicken Roulade.jpg")
+        background: url("../assets/photos/10-2021-Chicken-Roulade.jpg")
           no-repeat center;
         background-size: cover;
         background-position: -220px;
@@ -310,7 +315,7 @@ export default {
         width: 28rem;
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
-        background: url("../assets/photos/bread.png") no-repeat center;
+        background: url("../assets/photos/bread.jpg") no-repeat center;
         background-size: cover;
         transition: 1s;
         transition-delay: 0.5s;
