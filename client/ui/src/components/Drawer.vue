@@ -195,8 +195,8 @@ export default {
   .dash-nav-btn {
     display: block;
     position: absolute;
-    top: 3rem;
-    right: 3rem;
+    top: 6rem;
+    right: 8rem;
     z-index: 99;
   }
   .logo {

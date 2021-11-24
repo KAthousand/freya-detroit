@@ -163,7 +163,7 @@ export default {
   .dash-nav-btn {
     display: block;
     position: absolute;
-    top: 8vh;
+    top: 12vh;
     right: 4rem;
     border: 2px solid var(--light);
     .open-icon {
