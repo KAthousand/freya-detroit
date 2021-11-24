@@ -78,4 +78,12 @@ export default {
     filter: blur(0px) !important;
   }
 }
+
+@media screen and (max-height: 400px) and (max-width: 850px) {
+  .letter {
+    filter: blur(0px) !important;
+    height: 40px !important;
+    width: 30px !important;
+  }
+}
 </style>

@@ -40,17 +40,6 @@ export default {
     },
   },
   data: () => ({}),
-  // computed: {
-  //   changeBackgroundColor() {
-  //     if (this.activeSection === 1) {
-  //       return "transparent"
-  //     } else if (this.activeSection === 2) {
-  //       return "var(--primary-light)"
-  //     } else {
-  //       return "transparent"
-  //     }
-  //   },
-  // },
   methods: {
     handleClick(value) {
       this.$emit("route-click", value)
@@ -151,7 +140,7 @@ export default {
   .dash-nav-btn {
     display: block;
     position: absolute;
-    top: 2.5vh;
+    top: 5vh;
     right: 2rem;
     border: 2px solid var(--light);
     .open-icon {
@@ -162,18 +151,20 @@ export default {
 
 @media screen and (max-height: 400px) and (max-width: 850px) {
   .nav-container {
-    height: 15vh;
+    height: 10vh;
+    top: 0;
+    z-index: 999;
   }
 
   .tabs-container {
     display: none !important;
   }
+
   .dash-nav-btn {
     display: block;
     position: absolute;
-    top: 0.5rem;
-    right: 2rem;
-    // z-index: 99;
+    top: 8vh;
+    right: 4rem;
     border: 2px solid var(--light);
     .open-icon {
       color: var(--light) !important;

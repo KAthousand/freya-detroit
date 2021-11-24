@@ -215,4 +215,25 @@ export default {
     }
   }
 }
+
+@media screen and (max-height: 400px) and (max-width: 850px) {
+  .photo {
+    background-attachment: scroll !important;
+  }
+
+  .content-action {
+    bottom: 2rem !important;
+  }
+  .content {
+    height: 40% !important;
+  }
+  @keyframes expand {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 45%;
+    }
+  }
+}
 </style>

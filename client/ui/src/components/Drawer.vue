@@ -176,24 +176,31 @@ export default {
 
 @media screen and (max-height: 400px) and (max-width: 850px) {
   .dash-nav-container {
-    .nav-drawer {
-      height: 90% !important;
-      width: 50% !important;
-    }
-  }
-
-  .dash-nav-container {
     position: absolute;
     display: flex !important;
     justify-content: center;
     align-items: center;
+    transition: 0.25s;
   }
+
+  .tall-dash-nav {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+  }
+
   .dash-nav-btn {
     display: block;
     position: absolute;
-    top: 1rem;
-    right: 2rem;
-    z-index: 999999;
+    top: 3rem;
+    right: 3rem;
+    z-index: 99;
+  }
+  .logo {
+    display: none;
   }
 }
 </style>

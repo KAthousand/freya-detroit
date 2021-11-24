@@ -435,7 +435,7 @@ export default {
       url("../assets/photos/10-2021-Blackberry-Cavatelli.jpg") no-repeat center;
     background-size: cover;
     background-position: -260px;
-    transform: translateY(0);
+    transform: translateY(0) !important;
 
     &::before {
       content: "";
@@ -466,6 +466,118 @@ export default {
       url("../assets/photos/10-2021-Tuna.jpg") no-repeat center;
     background-size: cover;
     background-position: -65px;
+  }
+  .photo-three {
+    display: none;
+  }
+}
+@media screen and (max-height: 400px) and (max-width: 850px) {
+  .about-content {
+    display: none !important;
+  }
+
+  .mobile-content {
+    height: 100%;
+    width: 100%;
+  }
+
+  .mobile-title {
+    padding-bottom: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    z-index: 3;
+
+    h3 {
+      font-family: var(--font-display);
+      font-weight: 800;
+      color: var(--light);
+      text-align: center;
+      padding: 1rem;
+      line-height: 7.5rem;
+      font-size: 5rem;
+      font-weight: 500;
+      letter-spacing: 14px;
+
+      &::after {
+        content: "";
+        height: 3px;
+        width: 40%;
+        background-color: var(--light);
+        position: absolute;
+        bottom: 4vh;
+        left: 30%;
+      }
+    }
+  }
+
+  .menu-item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 1vh;
+
+    h5 {
+      width: 90%;
+      color: var(--light);
+      font-size: 1.8rem;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      position: absolute;
+      bottom: 50%;
+    }
+  }
+
+  .mobile-photo {
+    height: 100%;
+    width: 40%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background: linear-gradient(
+        to top right,
+        rgba(0, 25, 40, 0.6),
+        transparent 100%
+      ),
+      linear-gradient(to top left, rgba(0, 25, 40, 0.5), transparent 100%),
+      url("../assets/photos/10-2021-Blackberry-Cavatelli.jpg") no-repeat center;
+    background-size: cover;
+    background-position: -230px;
+    transform: translateY(0) !important;
+    position: absolute;
+    left: 8%;
+    top: -25%;
+  }
+
+  .mobile-photo-two {
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+    height: 50%;
+    width: 45%;
+    border-radius: 2%;
+    background: linear-gradient(
+        to top right,
+        rgba(0, 25, 40, 0.6),
+        transparent 100%
+      ),
+      linear-gradient(to top left, rgba(0, 25, 40, 0.6), transparent 100%),
+      url("../assets/photos/10-2021-Tuna.jpg") no-repeat center;
+    background-size: cover;
+    transform: translateY(0) !important;
+
+    &::before {
+      content: "";
+      border: 3px solid var(--primary);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 7%;
+      top: -30%;
+    }
   }
   .photo-three {
     display: none;

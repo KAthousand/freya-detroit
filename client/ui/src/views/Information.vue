@@ -331,6 +331,7 @@ export default {
 @media (max-width: 600px) {
   .information-container {
     position: relative !important;
+    padding-top: 1.5vh !important;
     overflow: hidden;
   }
 
@@ -371,6 +372,96 @@ export default {
   }
 
   .location-information {
+    margin: 0 !important;
+    padding: 0 !important;
+    align-items: center !important;
+  }
+}
+
+@media screen and (max-height: 400px) and (max-width: 850px) {
+  .information-container {
+    position: relative !important;
+    padding-top: 1.5vh !important;
+    overflow: hidden;
+  }
+
+  .mobile-background {
+    position: absolute;
+    height: 100vh;
+    width: 280%;
+    top: 0%;
+    left: 0%;
+    display: block;
+    transform: rotate(0deg);
+    background: url("../assets/information-background.gif") no-repeat center;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  .content-right {
+    display: none;
+  }
+  .content-left {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0%;
+    z-index: 2;
+    flex-direction: row !important;
+  }
+
+  .title {
+    margin-bottom: 0.5rem !important;
+    h3 {
+      padding-top: 4rem;
+
+      font-size: 4.8rem !important;
+      line-height: 5rem !important;
+    }
+  }
+
+  .body {
+    p {
+      font-size: 1.8rem !important;
+    }
+  }
+
+  .contact-content {
+    height: 100% !important;
+    h6 {
+      font-size: 1.4rem !important;
+      line-height: 1.5rem !important;
+      font-style: italic;
+      width: 80% !important;
+    }
+  }
+
+  .contact-insta {
+    font-size: 3.5rem !important;
+    padding: 0rem !important;
+    margin-bottom: 0.25rem !important;
+    a {
+      padding: 0rem 1rem !important;
+
+      &:hover {
+        background-color: var(--primary);
+      }
+    }
+  }
+
+  .location-content {
+    height: 100%;
+  }
+
+  .contact-information {
+    height: 100% !important;
+    width: 50% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .location-information {
+    width: 50%;
+    height: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
     align-items: center !important;

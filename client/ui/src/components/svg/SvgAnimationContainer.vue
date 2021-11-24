@@ -79,4 +79,12 @@ export default {
     filter: blur(0px) !important;
   }
 }
+
+@media screen and (max-height: 400px) and (max-width: 850px) {
+  .feather-container {
+    width: 20%;
+    filter: blur(0px) !important;
+    margin-bottom: 1rem;
+  }
+}
 </style>
