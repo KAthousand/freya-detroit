@@ -221,4 +221,18 @@ export default Vue.extend({
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 600px) {
+  .layout-content {
+    height: 100%;
+    position: fixed;
+  }
+}
+
+@media screen and (max-height: 400px) and (max-width: 850px) {
+  .layout-content {
+    height: 100%;
+    position: fixed;
+  }
+}
 </style>
