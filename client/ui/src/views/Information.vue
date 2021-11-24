@@ -114,7 +114,7 @@ export default {
     ),
     url("../assets/information-background.gif") no-repeat center;
   background-size: cover;
-  padding: 8vh 2vh 2vh 2vh;
+  padding: 1vh 2vh 2vh 2vh;
   display: flex;
   justify-content: center;
 
@@ -231,7 +231,7 @@ export default {
         margin-left: 15%;
 
         .location-content {
-          width: 100%;
+          width: 110%;
           text-align: left;
           margin: 0 auto;
           display: flex;
