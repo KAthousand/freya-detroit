@@ -58,7 +58,7 @@ export default {
   transition: 0.5s;
   z-index: 6;
   padding-right: 5%;
-  z-index: 99;
+  z-index: 999;
 
   .tabs-container {
     height: 100%;

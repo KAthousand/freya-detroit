@@ -119,6 +119,10 @@ export default {
   display: flex;
   justify-content: center;
 
+  .mobile-content {
+    display: none;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -280,7 +284,6 @@ export default {
       }
 
       .bottom {
-        margin-top: 4rem;
         justify-content: flex-end;
 
         h5,
@@ -291,9 +294,9 @@ export default {
           font-weight: 500;
           font-size: 4rem;
           line-height: 5rem;
-          margin-top: 20rem;
-          margin-left: 24rem;
-          width: 50%;
+          margin-top: 10%;
+          margin-left: 18%;
+          width: 80%;
           z-index: 4;
         }
 
@@ -308,8 +311,8 @@ export default {
           font-weight: 300;
           font-style: normal;
           letter-spacing: 10px;
-          margin-top: 0rem;
-          margin-left: 20rem;
+          margin-top: -1%;
+          margin-left: 15%;
         }
       }
     }
