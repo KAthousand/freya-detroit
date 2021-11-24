@@ -197,7 +197,7 @@ export default {
 
 @media (max-width: 600px) {
   .photo {
-    background-attachment: scroll;
+    background-attachment: scroll !important;
   }
 
   .content-action {
