@@ -221,15 +221,4 @@ export default Vue.extend({
   justify-content: center;
   align-items: center;
 }
-
-@media (max-width: 600px) {
-  .fullpage {
-    width: 100vw;
-    height: 100vh;
-  }
-  #information {
-    height: 100vh;
-    margin-bottom: 0;
-  }
-}
 </style>
