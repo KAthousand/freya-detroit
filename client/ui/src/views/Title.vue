@@ -37,7 +37,7 @@
               : 'transform: translateY(100%); opacity: 0'
           "
         >
-          <p>123 Address Street, Detroit MI, 48221</p>
+          <p>2929 E Grand Blvd, Detroit, MI 48202</p>
           <p>
             Wed - Sat from 5pm to 9pm
           </p>
@@ -123,7 +123,7 @@ export default {
       bottom: 15rem;
       transition: 1s;
       transition-delay: 0.25s;
-      z-index: 99999;
+      z-index: 99;
 
       &::before {
         content: "";
@@ -191,6 +191,23 @@ export default {
       100% {
         width: 30%;
       }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .content-action {
+    bottom: 2rem !important;
+  }
+  .content {
+    height: 30% !important;
+  }
+  @keyframes expand {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 45%;
     }
   }
 }

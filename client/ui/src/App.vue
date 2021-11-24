@@ -172,8 +172,8 @@ export default Vue.extend({
       passive: false,
     }) // Other browsers
 
-    window.addEventListener("touchstart", this.touchStart, { passive: false }) // mobile devices
-    window.addEventListener("touchmove", this.touchMove, { passive: false }) // mobile devices
+    // window.addEventListener("touchstart", this.touchStart, { passive: false }) // mobile devices
+    // window.addEventListener("touchmove", this.touchMove, { passive: false }) // mobile devices
   },
   destroyed() {
     window.removeEventListener("mousewheel", this.handleMouseWheel, {
@@ -181,8 +181,8 @@ export default Vue.extend({
     }) // Other browsers
     window.removeEventListener("DOMMouseScroll", this.handleMouseWheelDOM) // Mozilla Firefox
 
-    window.removeEventListener("touchstart", this.touchStart) // mobile devices
-    window.removeEventListener("touchmove", this.touchMove) // mobile devices
+    // window.removeEventListener("touchstart", this.touchStart) // mobile devices
+    // window.removeEventListener("touchmove", this.touchMove) // mobile devices
   },
 })
 </script>
@@ -197,9 +197,9 @@ export default Vue.extend({
   overflow-x: hidden;
 }
 
-.v-application--wrap {
-  -webkit-perspective: 1000;
-}
+// .v-application--wrap {
+//   -webkit-perspective: 1000;
+// }
 
 .layout-content {
   height: 100vh;
@@ -225,28 +225,11 @@ export default Vue.extend({
 @media (max-width: 600px) {
   .fullpage {
     width: 100vw;
-    height: 90vh;
-    // display: block;
-    margin: 10vh 0;
+    height: 100vh;
   }
   #information {
     height: 100vh;
     margin-bottom: 0;
-  }
-
-  .layout-container {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .layout-content {
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: auto;
-    height: 100%;
-    width: 100%;
   }
 }
 </style>

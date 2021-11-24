@@ -1,7 +1,6 @@
 <template>
   <div class="about-container">
     <div class="content-container">
-      <div class="background-photo"></div>
       <div class="about-content">
         <div class="title">
           <h3>OUR MENU</h3>
@@ -62,8 +61,32 @@
           </div>
         </div>
       </div>
-
-      <div class="background-photo"></div>
+      <div class="mobile-content">
+        <div class="mobile-title">
+          <h3>OUR MENU</h3>
+        </div>
+        <div class="menu-item">
+          <div class="mobile-photo"></div>
+          <div
+            class="mobile-photo-two"
+            :style="
+              active
+                ? 'transform: translateY(0); opacity: 1;'
+                : 'transform:translateY(50%); opacity: 0;'
+            "
+          ></div>
+          <h5>
+            We offer a multi-course dining experience featuring quality
+            ingredients cultivated by some of the most talented farmers,
+            fishmongers, foragers, and butchers in Southeast Michigan.
+            <br />
+            <br />Guests can select from omnivore, pescatarian, or vegan tasting
+            menus, with beverage pairings (including non-alcoholic) available.
+            The decor and cuisine will offer a nod to Scandinavian design and
+            techniques of preservation.
+          </h5>
+        </div>
+      </div>
     </div>
     <div class="photo-three"></div>
   </div>
@@ -308,7 +331,6 @@ export default {
   .two {
     bottom: 0%;
     right: 31%;
-    // border-radius: 100%;
     background: linear-gradient(
         to top right,
         rgba(0, 25, 40, 0.4),
@@ -335,6 +357,118 @@ export default {
       url("../assets/photos/10-2021-Panzanella.jpg") no-repeat center;
     background-size: cover;
     background-position: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-content {
+    display: none !important;
+  }
+
+  .mobile-content {
+    height: 100%;
+    width: 100%;
+  }
+
+  .mobile-title {
+    height: 20vh;
+    padding-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+
+    h3 {
+      font-family: var(--font-display);
+      font-weight: 800;
+      color: var(--light);
+      text-align: center;
+      padding: 1rem;
+      line-height: 9rem;
+      font-size: 9rem;
+      font-weight: 500;
+      letter-spacing: 14px;
+
+      &::after {
+        content: "";
+        height: 4px;
+        width: 80%;
+        background-color: var(--light);
+        position: absolute;
+        bottom: 1.5vh;
+        left: 10%;
+      }
+    }
+  }
+
+  .menu-item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 1vh;
+
+    h5 {
+      width: 90%;
+      color: var(--light);
+      font-size: 2.4rem;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      position: absolute;
+      bottom: 30%;
+    }
+  }
+
+  .mobile-photo {
+    height: 50%;
+    width: 80%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background: linear-gradient(
+        to top right,
+        rgba(0, 25, 40, 0.4),
+        transparent 100%
+      ),
+      linear-gradient(to top left, rgba(0, 25, 40, 0.5), transparent 100%),
+      url("../assets/photos/10-2021-Blackberry-Cavatelli.jpg") no-repeat center;
+    background-size: cover;
+    background-position: -260px;
+    transform: translateY(0);
+
+    &::before {
+      content: "";
+      border: 6px solid var(--primary);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 10%;
+      top: 10%;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+    }
+  }
+
+  .mobile-photo-two {
+    position: absolute;
+    bottom: 32%;
+    right: 4%;
+    height: 30%;
+    width: 60%;
+    border-radius: 10%;
+    background: linear-gradient(
+        to top right,
+        rgba(0, 25, 40, 0.6),
+        transparent 100%
+      ),
+      linear-gradient(to top left, rgba(0, 25, 40, 0.6), transparent 100%),
+      url("../assets/photos/10-2021-Tuna.jpg") no-repeat center;
+    background-size: cover;
+    background-position: -65px;
+  }
+  .photo-three {
+    display: none;
   }
 }
 </style>

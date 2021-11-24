@@ -96,16 +96,13 @@ export default {
 
 <style lang="scss" scoped>
 .photo-container {
-  // border: 2px solid purple;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: row;
-  // background-color: #b1b1a1;
 }
 
 .photo-content {
-  // border: 1px solid blue;
   width: 50%;
   border: 20px solid rgba(177, 177, 161, 0.25);
   display: flex;

@@ -29,7 +29,7 @@
                 <i class="fab fa-facebook"></i>
               </a>
             </div>
-            <a href="tel:313-351-5544"
+            <a href="sms:+3133515544"
               ><p style="margin-bottom: 1rem;">(313)351-5544 *</p></a
             >
             <h6>
@@ -42,7 +42,7 @@
           <div class="location title"><h3>HOURS &amp; LOCATION</h3></div>
           <div class="location-content body">
             <p>Wednesday - Saturday 5pm to 9pm</p>
-            <p>123 Address St, Detroit, MI, 48221</p>
+            <p>2929 E Grand Blvd, Detroit, MI 48202</p>
             <v-btn
               class="location-btn"
               tile
@@ -81,6 +81,7 @@
         ></div>
       </div>
     </div>
+    <div class="mobile-background"></div>
   </div>
 </template>
 
@@ -136,7 +137,6 @@ export default {
         position: relative;
         text-align: center;
         margin-bottom: 2rem;
-        // padding-left: 3rem;
 
         h3 {
           font-family: var(--font-display);
@@ -154,7 +154,6 @@ export default {
             background-color: var(--darker);
             position: absolute;
             bottom: -2rem;
-            // bottom: 2.5rem;
             left: 25%;
           }
         }
@@ -165,7 +164,6 @@ export default {
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        // text-align: center;
         color: var(--darker);
 
         a {
@@ -209,6 +207,11 @@ export default {
             padding: 0.2rem 1.75rem 0rem 1.75rem;
             border-radius: 20%;
             color: var(--beige);
+            transition: 0.5s;
+
+            &:hover {
+              background-color: var(--primary);
+            }
           }
         }
         h6 {
@@ -256,7 +259,6 @@ export default {
     }
 
     .content-right {
-      // border: 1px solid red;
       height: 100%;
       width: 50%;
       position: relative;
@@ -265,7 +267,6 @@ export default {
         position: absolute;
         top: calc(40% - 25rem);
         left: calc(50% - 25rem);
-        // border: 2px solid blue;
         height: 60rem;
         width: 50rem;
         border-top-left-radius: 50%;
@@ -310,7 +311,6 @@ export default {
         position: absolute;
         top: 12%;
         right: 140%;
-        // border: 2px solid blue;
         height: 30rem;
         width: 28rem;
         border-top-left-radius: 50%;
@@ -321,6 +321,58 @@ export default {
         transition-delay: 0.5s;
       }
     }
+  }
+}
+
+.mobile-background {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .information-container {
+    position: relative !important;
+  }
+
+  .mobile-background {
+    position: absolute;
+    height: 100vw;
+    width: 100vh;
+    top: 27%;
+    left: -59%;
+    display: block;
+    transform: rotate(90deg);
+    background: url("../assets/information-background.gif") no-repeat center;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  .content-right {
+    display: none;
+  }
+  .content-left {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0%;
+    z-index: 2;
+  }
+
+  .contact-content {
+    h6 {
+      font-style: italic;
+      width: 55% !important;
+    }
+  }
+
+  .contact-information {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .location-information {
+    margin: 0 !important;
+    padding: 0 !important;
+    align-items: center !important;
   }
 }
 </style>

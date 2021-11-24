@@ -19,8 +19,8 @@
         ><h3>Reserve a Table</h3></v-btn
       >
     </div>
-    <v-btn icon @click.stop="handleNavClick($event)" class="dash-nav-btn"
-      ><v-icon class="open-icon" color="secondary">menu</v-icon></v-btn
+    <v-btn icon @click="handleNavClick($event)" class="dash-nav-btn"
+      ><v-icon class="open-icon" color="secondary">mdi-menu</v-icon></v-btn
     >
   </div>
 </template>
@@ -69,7 +69,7 @@ export default {
   transition: 0.5s;
   z-index: 6;
   padding-right: 5%;
-  z-index: 99999;
+  z-index: 99;
 
   .tabs-container {
     height: 100%;
@@ -140,17 +140,19 @@ export default {
 @media (max-width: 600px) {
   .nav-container {
     height: 10vh;
+    top: 0;
+    z-index: 999;
   }
 
   .tabs-container {
     display: none !important;
   }
+
   .dash-nav-btn {
     display: block;
     position: absolute;
     top: 2.5vh;
     right: 2rem;
-    z-index: 99;
     border: 2px solid var(--light);
     .open-icon {
       color: var(--light) !important;
@@ -171,7 +173,7 @@ export default {
     position: absolute;
     top: 0.5rem;
     right: 2rem;
-    z-index: 99;
+    // z-index: 99;
     border: 2px solid var(--light);
     .open-icon {
       color: var(--light) !important;

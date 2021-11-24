@@ -58,6 +58,7 @@ export default {
   background-color: transparent;
   transition: 1s;
   padding-bottom: 15rem;
+  z-index: 1;
 }
 
 .feather-container {
@@ -70,5 +71,11 @@ export default {
   width: 40%;
   height: 12%;
   opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  .feather-container {
+    width: 70%;
+  }
 }
 </style>
