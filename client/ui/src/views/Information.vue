@@ -331,16 +331,17 @@ export default {
 @media (max-width: 600px) {
   .information-container {
     position: relative !important;
+    overflow: hidden;
   }
 
   .mobile-background {
     position: absolute;
-    height: 100vw;
-    width: 100vh;
-    top: 27%;
-    left: -59%;
+    height: 100vh;
+    width: 280%;
+    top: 0%;
+    left: 0%;
     display: block;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     background: url("../assets/information-background.gif") no-repeat center;
     background-size: cover;
     z-index: 1;

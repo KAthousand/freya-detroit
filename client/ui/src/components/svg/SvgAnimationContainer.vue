@@ -76,6 +76,7 @@ export default {
 @media (max-width: 600px) {
   .feather-container {
     width: 70%;
+    filter: blur(0px) !important;
   }
 }
 </style>

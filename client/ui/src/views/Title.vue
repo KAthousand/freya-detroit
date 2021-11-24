@@ -196,6 +196,10 @@ export default {
 }
 
 @media (max-width: 600px) {
+  .photo {
+    background-attachment: scroll;
+  }
+
   .content-action {
     bottom: 2rem !important;
   }

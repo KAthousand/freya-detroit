@@ -72,4 +72,10 @@ export default {
     opacity: 100;
   }
 }
+
+@media (max-width: 600px) {
+  .letter {
+    filter: blur(0px) !important;
+  }
+}
 </style>
