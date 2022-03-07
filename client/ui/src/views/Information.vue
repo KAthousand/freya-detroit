@@ -41,7 +41,7 @@
         <div class="location-information">
           <div class="location title"><h3>HOURS &amp; LOCATION</h3></div>
           <div class="location-content body">
-            <p>Wednesday - Saturday 5pm to 9pm</p>
+            <p>Tuesday - Saturday 5pm to 9pm</p>
             <p>2929 E Grand Blvd, Detroit, MI 48202</p>
             <v-btn
               class="location-btn"
