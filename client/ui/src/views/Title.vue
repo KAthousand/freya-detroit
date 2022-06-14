@@ -5,42 +5,21 @@
     </div>
     <div class="title-content">
       <div class="title-photo">
-        <div
-          class="photo"
-          :style="
-            photoTrigger ? 'transform: scale(1)' : 'transform:scale(1.15)'
-          "
-        ></div>
+        <div class="photo" :style="photoTrigger ? 'transform: scale(1)' : 'transform:scale(1.15)'"></div>
       </div>
       <div class="content">
         <div
           class="content-action"
-          :style="
-            photoTrigger
-              ? 'transform: translateY(0); opacity: 1;'
-              : 'transform: translateY(100%); opacity: 0'
-          "
+          :style="photoTrigger ? 'transform: translateY(0); opacity: 1;' : 'transform: translateY(100%); opacity: 0'"
         >
-          <v-btn
-            class="title-btn"
-            tile
-            href="https://www.exploretock.com/freya"
-            target="_blank"
-            >Reserve a Table</v-btn
-          >
+          <v-btn class="title-btn" tile href="https://www.exploretock.com/freya" target="_blank">Reserve a Table</v-btn>
         </div>
         <div
           class="address-container"
-          :style="
-            photoTrigger
-              ? 'transform: translateY(0); opacity: 1'
-              : 'transform: translateY(100%); opacity: 0'
-          "
+          :style="photoTrigger ? 'transform: translateY(0); opacity: 1' : 'transform: translateY(100%); opacity: 0'"
         >
           <p>2929 E Grand Blvd, Detroit, MI 48202</p>
-          <p>
-            Wed - Sat from 5pm to 9pm
-          </p>
+          <p>Tues - Sat from 5pm to 9:30pm</p>
           <span style="width: 1rem"></span>
         </div>
       </div>
@@ -94,11 +73,7 @@ export default {
     .photo {
       height: 100%;
       width: 100%;
-      background: linear-gradient(
-          to top left,
-          rgba(0, 11, 17, 0.4),
-          transparent 100%
-        ),
+      background: linear-gradient(to top left, rgba(0, 11, 17, 0.4), transparent 100%),
         linear-gradient(to bottom right, rgba(0, 11, 17, 0.8), transparent 100%),
         url("../assets/photos/10-2021-Squash-Tart.jpg") no-repeat, center;
       background-size: cover;
